@@ -1,0 +1,7 @@
+{
+  "name": "SegundoParcial_AlanRuiz",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
