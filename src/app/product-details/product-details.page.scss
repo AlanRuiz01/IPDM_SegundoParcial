@@ -1,0 +1,41 @@
+img{
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+ 
+.ion-text-center{
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.precios{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+p{
+    font-size: 20px;
+}
+
+.ion-tamanio{
+    width: 400px;
+
+}
+.descripcion{
+    margin-left: 20px;
+}
+
+#oferta{
+    text-align: center;
+    background-color: #6c757d;
+    width: 70px;
+    color: #f8f9fa;
+}
+
+#price{
+    font-weight: bold;
+}

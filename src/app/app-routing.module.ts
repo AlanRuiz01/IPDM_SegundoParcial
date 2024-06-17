@@ -8,9 +8,17 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'productlist',
     pathMatch: 'full'
   },
+  {
+    path: 'productlist',
+    loadChildren: () => import('./productlist/productlist.module').then( m => m.ProductlistPageModule)
+  },
+  {
+    path: 'product-details',
+    loadChildren: () => import('./product-details/product-details.module').then( m => m.ProductDetailsPageModule)
+  }
 ];
 
 @NgModule({

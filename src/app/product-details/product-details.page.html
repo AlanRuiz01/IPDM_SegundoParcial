@@ -1,0 +1,21 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/productlist"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+ 
+<ion-content class="ion-tamanio" >
+  <ion-card *ngIf="product">
+    <ion-card-title class="ion-text-center">{{ product.titulo }}</ion-card-title>
+    <img [src]="'https://www.hostcatedral.com/api/appNoti/public/img/' + product.img" />
+    <ion-card-header>
+      <ion-card-subtitle class="descripcion">{{ product.descripcion }} </ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content class="precios">
+      <p id="oferta">-{{ product.porcentaje_descuento}}%</p>
+      <p id="price">${{ product.precio }}</p>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
